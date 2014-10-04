@@ -13,6 +13,9 @@
 		0329B60419DA15AD00154002 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0329B60319DA15AD00154002 /* Images.xcassets */; };
 		0329B60719DA15AD00154002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329B60519DA15AD00154002 /* LaunchScreen.xib */; };
 		0329B61319DA15AD00154002 /* iOS_F2_HomeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329B61219DA15AD00154002 /* iOS_F2_HomeworkTests.swift */; };
+		0329B61D19DA178400154002 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329B61C19DA178400154002 /* Person.swift */; };
+		0329B61F19DB42B100154002 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329B61E19DB42B100154002 /* DetailView.swift */; };
+		039B3C7519DF683600E92A50 /* studentList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 039B3C7419DF683600E92A50 /* studentList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		0329B60C19DA15AD00154002 /* iOS_F2_HomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_F2_HomeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0329B61119DA15AD00154002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0329B61219DA15AD00154002 /* iOS_F2_HomeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_F2_HomeworkTests.swift; sourceTree = "<group>"; };
+		0329B61C19DA178400154002 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0329B61E19DB42B100154002 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		039B3C7419DF683600E92A50 /* studentList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = studentList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				0329B5FC19DA15AD00154002 /* AppDelegate.swift */,
-				0329B5FE19DA15AD00154002 /* ViewController.swift */,
-				0329B60019DA15AD00154002 /* Main.storyboard */,
-				0329B60319DA15AD00154002 /* Images.xcassets */,
+				039B3C7819DF74A200E92A50 /* Controller */,
+				039B3C7719DF749300E92A50 /* View */,
+				039B3C7619DF748000E92A50 /* Model */,
 				0329B60519DA15AD00154002 /* LaunchScreen.xib */,
 				0329B5FA19DA15AD00154002 /* Supporting Files */,
 			);
@@ -110,6 +116,33 @@
 				0329B61119DA15AD00154002 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		039B3C7619DF748000E92A50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0329B60319DA15AD00154002 /* Images.xcassets */,
+				0329B61C19DA178400154002 /* Person.swift */,
+				039B3C7419DF683600E92A50 /* studentList.plist */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		039B3C7719DF749300E92A50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0329B60019DA15AD00154002 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		039B3C7819DF74A200E92A50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0329B5FE19DA15AD00154002 /* ViewController.swift */,
+				0329B61E19DB42B100154002 /* DetailView.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +227,7 @@
 			files = (
 				0329B60219DA15AD00154002 /* Main.storyboard in Resources */,
 				0329B60719DA15AD00154002 /* LaunchScreen.xib in Resources */,
+				039B3C7519DF683600E92A50 /* studentList.plist in Resources */,
 				0329B60419DA15AD00154002 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0329B61D19DA178400154002 /* Person.swift in Sources */,
+				0329B61F19DB42B100154002 /* DetailView.swift in Sources */,
 				0329B5FF19DA15AD00154002 /* ViewController.swift in Sources */,
 				0329B5FD19DA15AD00154002 /* AppDelegate.swift in Sources */,
 			);
@@ -407,6 +443,7 @@
 				0329B61819DA15AD00154002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0329B61919DA15AD00154002 /* Build configuration list for PBXNativeTarget "iOS_F2_HomeworkTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +452,7 @@
 				0329B61B19DA15AD00154002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
